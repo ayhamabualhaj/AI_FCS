@@ -1,0 +1,15 @@
+generate_image_task:
+  description: >
+    Review the following image prompt and caption context:
+    - Image Prompt: {image_prompt}
+    - Caption Context: {caption}
+    
+    1. Refine the image prompt to ensure it is concrete, brand-safe, and highly visual.
+    2. Use your Generate Image Tool to create the image based on your refined prompt.
+  expected_output: >
+    You must return ONLY a valid JSON object (no ``` fences), exactly formatted as follows:
+    {
+      "prompt_used": "the exact final refined prompt you sent to the tool",
+      "image_reference": "the URL string returned by the tool"
+    }
+  agent: art_director

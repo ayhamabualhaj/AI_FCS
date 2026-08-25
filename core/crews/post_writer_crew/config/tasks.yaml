@@ -1,0 +1,21 @@
+write_post_task:
+  description: >
+    Write a Facebook post about the following topic: {topic}
+    
+    Use the following campaign guidelines:
+    - Objective: {campaign_objective}
+    - Target Audience: {target_audience}
+    - Tone: {tone}
+    - Brand Voice Guidelines: {brand_voice}
+    - Required Keywords/Hashtags: {keywords}
+    
+    Ensure the image_prompt describes a single clear scene (subject, setting, style, mood, colours) for the art director.
+  expected_output: >
+    You must return ONLY a valid JSON object (no ``` fences), exactly formatted as follows:
+    {
+      "caption": "the full Facebook post text, with line breaks and emoji",
+      "hashtags": ["#tag", "..."],
+      "call_to_action": "e.g. Order yours today 👉 link",
+      "image_prompt": "a vivid, concrete visual description for an illustrator"
+    }
+  agent: facebook_copywriter

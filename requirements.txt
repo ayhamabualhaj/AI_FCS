@@ -1,0 +1,13 @@
+Django
+djangorestframework
+python-decouple
+crewai
+crewai-tools
+openai
+psycopg2-binary
+pdfplumber
+python-docx
+requests
+jinja2
+crewai
+pillow
