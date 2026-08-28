@@ -12,6 +12,9 @@ class ContentPipelineState(BaseModel):
     brand_voice: str = ""
     keywords: str = ""
 
+    # Intermediate
+    refined_prompt: str = ""
+
     # Outputs
     post_output: Dict[str, Any] = {}
     image_output: Dict[str, Any] = {}
